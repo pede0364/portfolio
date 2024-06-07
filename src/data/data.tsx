@@ -8,7 +8,7 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-import resume from '../assets/resume.pdf';
+import resumePDF from '../assets/resume.pdf';
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
@@ -69,24 +69,26 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  imageSrc: heroImage,
-  name: `I'm Aimee Pederson`,
+  /*imageSrc: heroImage,*/
+  name: `I'm Aimee Pederson.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a Minnesota-based <strong className="text-stone-100">Frontend Developer</strong>, who specializes in helping
-        small businesses build and optimize their mobile-first websites.
+        small businesses <strong className="text-stone-100">build</strong> and{' '}
+        <strong className="text-stone-100">optimize</strong> their mobile-first websites.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, I like to <strong className="text-stone-100">read novels and non-fiction</strong>, work on
-        our <strong className="text-stone-100">garden</strong>, or visit new parks around{' '}
+        In my free time time, I like to read <strong className="text-stone-100">novels</strong> and{' '}
+        <strong className="text-stone-100">non-fiction</strong>, work on our{' '}
+        <strong className="text-stone-100">garden</strong>, or visit new parks around{' '}
         <strong className="text-stone-100">Minneapolis and St. Paul</strong>.
       </p>
     </>
   ),
   actions: [
     {
-      href: resume,
+      href: '/assets/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,

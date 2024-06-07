@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         yellow: '#efc603',
+        peach: '#feeadb',
       },
       keyframes: {
         typing: {
