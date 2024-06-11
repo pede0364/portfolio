@@ -1,3 +1,4 @@
+/* eslint-disable simple-import-sort/imports */
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
@@ -8,24 +9,12 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-import resumePDF from '../assets/resume.pdf';
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/bg-verde.png';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -69,20 +58,26 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  /*imageSrc: heroImage,*/
+  imageSrc: heroImage,
   name: `I'm Aimee Pederson.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Minnesota-based <strong className="text-stone-100">Frontend Developer</strong>, who specializes in helping
-        small businesses <strong className="text-stone-100">build</strong> and{' '}
-        <strong className="text-stone-100">optimize</strong> their mobile-first websites.
+        I develop <strong className="text-stone-100">mobile-first</strong> websites and{' '}
+        <strong className="text-stone-100">optimize existing websites</strong> for my clients. With over a{' '}
+        <strong className="text-stone-100">
+          decade of experience in Ecommerce, Conversion Rate Optimization, and User Experience,
+        </strong>{' '}
+        I know how to build a site that works for the business and the customer.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, I like to read <strong className="text-stone-100">novels</strong> and{' '}
-        <strong className="text-stone-100">non-fiction</strong>, work on our{' '}
-        <strong className="text-stone-100">garden</strong>, or visit new parks around{' '}
-        <strong className="text-stone-100">Minneapolis and St. Paul</strong>.
+        Seeing site metrics and user experiences improve is a <strong className="text-stone-100">thrill</strong> that
+        keeps me excited about my day-to-day and{' '}
+        <strong className="text-stone-100">I'd love to share that with you and your business.</strong>
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        In my free time, I watch a lot of Blippi with my pre-schooler, read romance, mystery, and self-improvement
+        books, and work on the occasional house project (plant this, build/paint that.)
       </p>
     </>
   ),
@@ -106,16 +101,18 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I love building beautiful, responsive websites.  I have the most experience with React, 
+  HTML, and Boostrap but am always interested in learning new technologies.  Because it is where I began,
+   I have a soft spot for looking at data and A/B Testing.  These days, I'm launching my independent 
+   career journey!  I continue to do what I love and changing the face of it from corporate to solo 
+   allows me to be the best mom and partner I can be.`,
   aboutItems: [
     {label: 'Location', text: 'Minneapolis, MN', Icon: MapIcon},
     {label: 'Age', text: '40', Icon: CalendarIcon},
     {label: 'Nationality', text: 'American', Icon: FlagIcon},
     {label: 'Interests', text: 'Reading, Gardening, Nature', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Minnesota, Twin Cities', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Self Employed', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'Self Employed / Contractor', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -148,11 +145,61 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
+        name: 'JQuery',
+        level: 8,
+      },
+      {
         name: 'JavaScript',
         level: 7,
       },
       {
         name: 'React',
+        level: 5,
+      },
+      {
+        name: 'Flexbox',
+        level: 7,
+      },
+    ],
+  },
+  {
+    name: 'Backend development',
+    skills: [
+      {
+        name: 'Node.js',
+        level: 6,
+      },
+      {
+        name: 'EDI',
+        level: 5,
+      },
+      {
+        name: 'PHP',
+        level: 4,
+      },
+      {
+        name: 'Java',
+        level: 3,
+      },
+      {
+        name: 'Python',
+        level: 3,
+      },
+    ],
+  },
+  {
+    name: 'Analytics',
+    skills: [
+      {
+        name: 'Adobe Analytics',
+        level: 8,
+      },
+      {
+        name: 'MS Excel',
+        level: 8,
+      },
+      {
+        name: 'MicroStrategy',
         level: 5,
       },
       {
@@ -162,28 +209,43 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Miscellaneous',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Adobe Target, Monetate, Useitbetter',
+        level: 10,
+      },
+      {
+        name: 'SquareSpace',
         level: 8,
       },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'Aha!',
+        level: 8,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Atlassian: Confluence, JIRA',
+        level: 8,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'ContentSquare, Glassbox',
+        level: 8,
+      },
+      {
+        name: 'Postman',
+        level: 5,
+      },
+      {
+        name: 'Git',
+        level: 5,
+      },
+      {
+        name: 'Tealium',
+        level: 6,
+      },
+      {
+        name: 'Wix',
+        level: 5,
       },
     ],
   },
@@ -194,70 +256,16 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Mound Fire Department',
+    description: 'Webmaster since 2005.',
+    url: 'https://moundfire.com',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'WeCAB - Site Operations',
+    description: 'Site maintenance and consultation, pro bono basis 2013 to 2015.',
+    url: 'https://wecab.org',
     image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
@@ -366,6 +374,4 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
   {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
