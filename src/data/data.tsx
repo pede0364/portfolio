@@ -15,7 +15,7 @@ import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import heroImage from '../images/bg-verde.png';
 import porfolioMFD1 from '../images/portfolio/portfolio-mfd-mobile.png';
 import porfolioWeCAB1 from '../images/portfolio/portfolio-wecab-desktop.jpeg';
-import profilepic from '../images/profilepic.jpg';
+import profilepic from '../images/profilepic.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -76,8 +76,8 @@ export const heroData: Hero = {
         <strong className="text-stone-100">I'd love to share that with you and your business.</strong>
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, I watch a lot of Blippi with my pre-schooler, read romance, mystery, and self-improvement
-        books, and work on the occasional house project (plant this, build/paint that.)
+        In my free time, I watch Blippi with my pre-schooler, read romance, mystery, and self-improvement books, and
+        work on the occasional house project (plant this, build/paint that.)
       </p>
     </>
   ),
@@ -101,10 +101,10 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I love building beautiful, responsive websites.  I have the most experience with React, 
+  description: `I love building beautiful, responsive websites.  My experience is primarily based in React, 
   HTML, and Boostrap but am always interested in learning new technologies.  Because it is where I began,
    I have a soft spot for looking at data and A/B Testing.  These days, I'm launching my independent 
-   career journey!  I continue to do what I love and changing the face of it from corporate to solo 
+   career journey!  I continue to do what I love, and changing the face of it from corporate to solo 
    allows me to be the best mom and partner I can be.`,
   aboutItems: [
     {label: 'Location', text: 'Minneapolis, MN', Icon: MapIcon},
@@ -175,7 +175,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'PHP',
-        level: 4,
+        level: 5,
       },
       {
         name: 'Java',
@@ -291,24 +291,34 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'December 2008',
+    location: 'Hennepin Technical College - Eden Prairie, MN',
+    title: 'Associate of Applied Science: Network Administrator / Analyst',
+    content: (
+      <p>
+        With a focus on computer networking, I studied a variety of topics: subnetting, programming, hardware, Linux and
+        command line, server configuration, internet protocol, and more.
+      </p>
+    ),
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'December 2006',
+    location: 'University of Minnesota - Minneapolis, MN',
+    title: 'Bachelor of Individualized Studies: Technical Communication, Photography, and Rhetoric',
+    content: (
+      <p>
+        I graduated with a self-designed degree that afforded me excellent communication skills and experience with
+        creative tools like PhotoShop, Indesign, and Final Cut.
+      </p>
+    ),
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'March 2013 - April 2024',
+    location: 'Fingerhut',
+    title: 'Senior Manager, Site Operations & Optimization',
     content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and
@@ -317,9 +327,9 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'November 2010 - March 2013',
+    location: 'Cargill',
+    title: 'Container Data Coordinator',
     content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and
@@ -336,19 +346,14 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Tim Corsaro',
+      text: "I have had the good fortune to know Aimee professionally for many years. In my history with Aimee I have seen her master eCommerce operations, coding, analytics and the concepts of website optimization.  Aimee's integrity, ethics, and ability to deliver will never disappoint.",
+      image: '/assets/testimonials/tcorsaro.jpeg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Molly Mann',
+      text: 'Aimee brings to the table not only her plethora of technical knowledge and problem solving, but witty humor. She is highly analytical, with great critical thinking skills, and motivated by driving results.',
+      image: '/assets/testimonials/mmann.png',
     },
   ],
 };
@@ -359,27 +364,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: '',
   items: [
-    {
+    /*{
       type: ContactType.Email,
       text: 'reachout@timbaker.me',
       href: 'mailto:reachout@timbaker.me',
-    },
+    },*/
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Minneapolis, MN, USA',
+      href: 'https://www.google.ca/maps/place/Minneapolis,+MN/@44.9706674,-93.3438792,12z',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'pede0364',
+      href: 'https://github.com/pede0364',
+    },
+    {
+      type: ContactType.LinkedIn,
+      text: 'aimee-pederson',
+      href: 'https://www.linkedin.com/in/aimee-pederson/',
     },
   ],
 };
