@@ -13,8 +13,8 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import heroImage from '../images/bg-verde.png';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import porfolioMFD1 from '../images/portfolio/portfolio-mfd-mobile.png';
+import porfolioWeCAB1 from '../images/portfolio/portfolio-wecab-desktop.jpeg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -209,6 +209,23 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
+    name: 'Content & Creative',
+    skills: [
+      {
+        name: 'Adobe Photoshop',
+        level: 7,
+      },
+      {
+        name: 'Final Cut Pro',
+        level: 6,
+      },
+      {
+        name: 'InDesign',
+        level: 5,
+      },
+    ],
+  },
+  {
     name: 'Miscellaneous',
     skills: [
       {
@@ -259,13 +276,13 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Mound Fire Department',
     description: 'Webmaster since 2005.',
     url: 'https://moundfire.com',
-    image: porfolioImage1,
+    image: porfolioMFD1,
   },
   {
     title: 'WeCAB - Site Operations',
     description: 'Site maintenance and consultation, pro bono basis 2013 to 2015.',
     url: 'https://wecab.org',
-    image: porfolioImage2,
+    image: porfolioWeCAB1,
   },
 ];
 
@@ -371,7 +388,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/pede0364'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/6696064'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/aimee-pederson/'},
 ];
