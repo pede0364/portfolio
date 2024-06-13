@@ -5,8 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        yellow: '#efc603',
-        brick: '#9b4922',
+        mustard: '#efc603',
+        rose: '#946451',
+        blush: '#a6856f',
+        leaf: '#3a4925',
+        shell: '#d9cfcf',
       },
       keyframes: {
         typing: {

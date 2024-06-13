@@ -320,22 +320,29 @@ export const experience: TimelineItem[] = [
     location: 'Fingerhut',
     title: 'Senior Manager, Site Operations & Optimization',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>
+          Lead a team of 5, possessing various levels of experience, to deliver promotional and test content while
+          maintaining quality customer experience and growing business knowledge through continuous A/B testing.
+        </li>
+        <li>
+          Manage and motivate employees, helping them to think independently, feel productive and valued, and share a
+          positive attitude.
+        </li>
+        <li>Develop and implement business strategies to achieve business goals and stay competitive.</li>
+        <li>
+          Resolve cross-functional conflicts, actively listening to concerns and finding appropriate middle ground.
+        </li>
+        <li>Leverage data and analytics to make informed decisions and drive business improvements.</li>
+        <li>Ideate, develop, and proof tools used by internal site content and testing teams.</li>
+      </ul>
     ),
   },
   {
     date: 'November 2010 - March 2013',
     location: 'Cargill',
     title: 'Container Data Coordinator',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
+    content: <p>stuff</p>,
   },
 ];
 
