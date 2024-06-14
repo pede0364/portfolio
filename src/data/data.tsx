@@ -102,7 +102,7 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I love building beautiful, responsive websites.  My experience is primarily based in React, 
-  HTML, and Boostrap but am always interested in learning new technologies.  Because it is where I began,
+  HTML, and Boostrap but I am always interested in learning new technologies.  Because it is where I began,
    I have a soft spot for looking at data and A/B Testing.  These days, I'm launching my independent 
    career journey!  I continue to do what I love, and changing the face of it from corporate to solo 
    allows me to be the best mom and partner I can be.`,
