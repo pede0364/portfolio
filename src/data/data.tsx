@@ -12,7 +12,7 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import heroImage from '../images/bg-verde.png';
+import heroImage from '../images/bg-cloth.png';
 import porfolioMFD1 from '../images/portfolio/portfolio-mfd-mobile.png';
 import porfolioWeCAB1 from '../images/portfolio/portfolio-wecab-desktop.jpeg';
 import profilepic from '../images/profilepic.png';
@@ -62,20 +62,20 @@ export const heroData: Hero = {
   name: `I'm Aimee Pederson.`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I develop <strong className="text-stone-100">mobile-first</strong> websites and{' '}
-        <strong className="text-stone-100">optimize existing websites</strong> for my clients. With over a{' '}
-        <strong className="text-stone-100">
+      <p className="prose-sm text-gray-500 sm:prose-base lg:prose-lg">
+        I develop <strong className="text-gray-600">mobile-first</strong> websites and{' '}
+        <strong className="text-stone-600">optimize existing websites</strong> for my clients. With over a{' '}
+        <strong className="text-stone-600">
           decade of experience in Ecommerce, Conversion Rate Optimization, and User Experience,
         </strong>{' '}
         I know how to build a site that works for the business and the customer.
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Seeing site metrics and user experiences improve is a <strong className="text-stone-100">thrill</strong> that
+      <p className="prose-sm text-gray-500 sm:prose-base lg:prose-lg">
+        Seeing site metrics and user experiences improve is a <strong className="text-gray-600">thrill</strong> that
         keeps me excited about my day-to-day and{' '}
-        <strong className="text-stone-100">I'd love to share that with you and your business.</strong>
+        <strong className="text-gray-600">I'd love to share that with you and your business.</strong>
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      <p className="prose-sm text-gray-500 sm:prose-base lg:prose-lg">
         In my free time, I watch Blippi with my pre-schooler, read romance, mystery, and self-improvement books, and
         work on the occasional house project (plant this, build/paint that.)
       </p>
