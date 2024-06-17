@@ -22,8 +22,10 @@ const Resume: FC = memo(() => {
         </ResumeSection>
         <ResumeSection title="Skills">
           <p className="pb-8">
-            I am blessed to have experience with a lot of technologies. Wondering about something specific? Send me a
-            note!
+            I am blessed to have experience with a lot of technologies. Wondering about something specific?{' '}
+            <a className="underline hover:text-gray-950" href={`/#${SectionId.Contact}`}>
+              Send me a note!
+            </a>
           </p>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {skills.map((skillgroup, index) => (

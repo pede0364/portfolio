@@ -16,7 +16,7 @@ import heroImage from '../images/bg-cloth.png';
 import porfolioMFD1 from '../images/portfolio/portfolio-mfd-mobile.png';
 import porfolioWeCAB1 from '../images/portfolio/portfolio-wecab-desktop.jpeg';
 import profilepic from '../images/profilepic.png';
-import testimonialImage from '../images/testimonial.webp';
+import testimonialImage from '../images/bg-forest-path-watercolor.png';
 import {
   About,
   ContactSection,
@@ -63,7 +63,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-gray-500 sm:prose-base lg:prose-lg">
-        I develop <strong className="text-gray-600">mobile-first</strong> websites and{' '}
+        I develop <strong className="text-gray-600">mobile-first websites</strong> and{' '}
         <strong className="text-stone-600">optimize existing websites</strong> for my clients. With over a{' '}
         <strong className="text-stone-600">
           decade of experience in Ecommerce, Conversion Rate Optimization, and User Experience,
@@ -103,9 +103,7 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I love building beautiful, responsive websites.  My experience is primarily based in React, 
   HTML, and Boostrap but I am always interested in learning new technologies.  Because it is where I began,
-   I have a soft spot for looking at data and A/B Testing.  These days, I'm launching my independent 
-   career journey!  I continue to do what I love, and changing the face of it from corporate to solo 
-   allows me to be the best mom and partner I can be.`,
+   I have a soft spot for looking at data and A/B Testing.`,
   aboutItems: [
     {label: 'Location', text: 'Minneapolis, MN', Icon: MapIcon},
     {label: 'Age', text: '40', Icon: CalendarIcon},
@@ -291,17 +289,6 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'December 2008',
-    location: 'Hennepin Technical College - Eden Prairie, MN',
-    title: 'Associate of Applied Science: Network Administrator / Analyst',
-    content: (
-      <p>
-        With a focus on computer networking, I studied a variety of topics: subnetting, programming, hardware, Linux and
-        command line, server configuration, internet protocol, and more.
-      </p>
-    ),
-  },
-  {
     date: 'December 2006',
     location: 'University of Minnesota - Minneapolis, MN',
     title: 'Bachelor of Individualized Studies: Technical Communication, Photography, and Rhetoric',
@@ -309,6 +296,17 @@ export const education: TimelineItem[] = [
       <p>
         I graduated with a self-designed degree that afforded me excellent communication skills and experience with
         creative tools like PhotoShop, Indesign, and Final Cut.
+      </p>
+    ),
+  },
+  {
+    date: 'December 2008',
+    location: 'Hennepin Technical College - Eden Prairie, MN',
+    title: 'Associate of Applied Science: Network Administrator / Analyst',
+    content: (
+      <p>
+        With a focus on computer networking, I studied a variety of topics: subnetting, programming, hardware, Linux and
+        command line, server configuration, internet protocol, and more.
       </p>
     ),
   },
@@ -320,7 +318,7 @@ export const experience: TimelineItem[] = [
     location: 'Fingerhut',
     title: 'Senior Manager, Site Operations & Optimization',
     content: (
-      <ul>
+      <ul className="list-disc ml-4">
         <li>
           Lead a team of 5, possessing various levels of experience, to deliver promotional and test content while
           maintaining quality customer experience and growing business knowledge through continuous A/B testing.
@@ -342,7 +340,20 @@ export const experience: TimelineItem[] = [
     date: 'November 2010 - March 2013',
     location: 'Cargill',
     title: 'Container Data Coordinator',
-    content: <p>stuff</p>,
+    content: (
+      <ul className="list-disc ml-4">
+        <li>Increased global container tracking visibility by 450% (185,000 containers annually.)</li>
+        <li>Trained more than 30 global business units and 250 users on supply chain software and contracting tool.</li>
+        <li>
+          Managed carrier integration projects. Directed and managed the mapping of 2,000+ integration key fields from
+          27 ocean carriers.
+        </li>
+        <li>
+          Audited vendor billing statement through intelligence reporting; liaised with vendor to resolve reporting
+          gaps.
+        </li>
+      </ul>
+    ),
   },
 ];
 
@@ -373,11 +384,11 @@ export const contact: ContactSection = {
   headerText: 'Get in touch.',
   description: '',
   items: [
-    /*{
+    {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
-    },*/
+      text: 'contact@aimeep.me',
+      href: 'mailto:contact@aimeep.me',
+    },
     {
       type: ContactType.Location,
       text: 'Minneapolis, MN, USA',
