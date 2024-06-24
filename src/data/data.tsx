@@ -306,7 +306,7 @@ export const education: TimelineItem[] = [
     content: (
       <p>
         With a focus on computer networking, I studied a variety of topics: subnetting, programming, hardware, Linux and
-        command line, server configuration, internet protocol, and more.
+        command line, server configuration, internet protocol, and more. test.
       </p>
     ),
   },
