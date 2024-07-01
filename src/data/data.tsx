@@ -102,7 +102,7 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I love building beautiful, responsive websites.  My experience is primarily based in React, 
-  HTML, and Boostrap but I am always interested in learning new technologies.  Because it is where I began,
+  HTML, and Bootstrap but I am always interested in learning new technologies.  Because it is where I began,
    I have a soft spot for looking at data and A/B Testing.`,
   aboutItems: [
     {label: 'Location', text: 'Minneapolis, MN', Icon: MapIcon},
@@ -306,7 +306,7 @@ export const education: TimelineItem[] = [
     content: (
       <p>
         With a focus on computer networking, I studied a variety of topics: subnetting, programming, hardware, Linux and
-        command line, server configuration, internet protocol, and more. test.
+        command line, server configuration, internet protocol, and more.
       </p>
     ),
   },
@@ -384,11 +384,6 @@ export const contact: ContactSection = {
   headerText: 'Get in touch.',
   description: '',
   items: [
-    {
-      type: ContactType.Email,
-      text: 'contact@aimeep.me',
-      href: 'mailto:contact@aimeep.me',
-    },
     {
       type: ContactType.Location,
       text: 'Minneapolis, MN, USA',
